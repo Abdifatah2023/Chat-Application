@@ -4,7 +4,7 @@
 # Chat Application
 
 ## Overview
-This project implements a simple chat application using Java Swing for the client-side GUI and a multi-threaded server using Java Sockets. It is composed of two main components: `Server` (the server) and `Client` (the client).
+This project implements a simple chat application using Java Swing for the client-side GUI and a multi-threaded server using Java Sockets. It is composed of two main components: `Server` and `Client`.
 
 ## Author
 - Cabdifataax Maxamuud
