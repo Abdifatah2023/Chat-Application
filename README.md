@@ -96,7 +96,4 @@ The client code creates a GUI for user interaction and connects to the server us
 - Implement message encryption for secure communication.
 - Handle server shutdown and restart more gracefully.
 
-## License
-This project is open-source and available under the [MIT License](LICENSE).
-
 ---
