@@ -4,7 +4,7 @@
 # Chat Application
 
 ## Overview
-This project implements a simple chat application using Java Swing for the client-side GUI and a multi-threaded server using Java Sockets. It is composed of two main components: `Lab4Server` (the server) and `Lab5Client` (the client).
+This project implements a simple chat application using Java Swing for the client-side GUI and a multi-threaded server using Java Sockets. It is composed of two main components: `Server` (the server) and `Client` (the client).
 
 ## Author
 - Cabdifataax Maxamuud
@@ -21,31 +21,31 @@ This project implements a simple chat application using Java Swing for the clien
 - Basic understanding of Java and networking.
 
 ### Running the Server
-1. Compile the `Lab4Server.java` file:
+1. Compile the `Server.java` file:
     ```sh
-    javac Lab4Server.java
+    javac Server.java
     ```
 2. Run the server:
     ```sh
-    java Lab4Server
+    java Server
     ```
 3. The server will start on port `5555` and wait for clients to connect.
 
 ### Running the Client
-1. Compile the `Lab5Client.java` file:
+1. Compile the `Client.java` file:
     ```sh
-    javac Lab5Client.java
+    javac Client.java
     ```
 2. Run the client:
     ```sh
-    java Lab5Client
+    java Client
     ```
 3. A GUI will appear prompting for the server's hostname and port. By default, it is set to `localhost` and `5555`.
 4. Click `Connect` to connect to the server. After connecting, you can type messages and send them by clicking the `Send` button.
 
 ## Code Explanation
 
-### Lab4Server
+### Server
 
 The server code listens for client connections on port `5555`. When a client connects, it starts a new thread (`ServerThread`) to handle the client's communication.
 
@@ -57,7 +57,7 @@ Each `ServerThread`:
 - Reads messages from the client.
 - Broadcasts received messages to all connected clients.
 
-### Lab5Client
+### Client
 
 The client code creates a GUI for user interaction and connects to the server using a socket.
 
@@ -71,11 +71,11 @@ The client code creates a GUI for user interaction and connects to the server us
 ## Example Usage
 
 1. **Start the server**:
-   - Open a terminal and navigate to the directory containing `Lab4Server.java`.
+   - Open a terminal and navigate to the directory containing `Server.java`.
    - Run the server as described in the Running the Server section.
 
 2. **Start the client**:
-   - Open a new terminal and navigate to the directory containing `Lab5Client.java`.
+   - Open a new terminal and navigate to the directory containing `Client.java`.
    - Run the client as described in the Running the Client section.
    - Repeat to start multiple clients.
 
